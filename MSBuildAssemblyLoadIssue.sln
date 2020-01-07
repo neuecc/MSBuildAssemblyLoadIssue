@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSBuildAssemblyLoadIssue", "MSBuildAssemblyLoadIssue.csproj", "{BC998938-034D-4ED4-9882-9873D26C6EBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC998938-034D-4ED4-9882-9873D26C6EBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC998938-034D-4ED4-9882-9873D26C6EBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC998938-034D-4ED4-9882-9873D26C6EBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC998938-034D-4ED4-9882-9873D26C6EBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF13803D-95A3-4F40-B6D8-617534140826}
+	EndGlobalSection
+EndGlobal

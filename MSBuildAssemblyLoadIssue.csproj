@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="MagicOnion.Generated.cs" />
+      <Compile Remove="MessagePack.Generated.cs" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="MagicOnion.Abstractions" Version="3.0.3" />
+        <PackageReference Include="MagicOnion.MSBuild.Tasks" Version="3.0.3" PrivateAssets="All" />
+        <PackageReference Include="MessagePack.MSBuild.Tasks" Version="2.0.323" PrivateAssets="All" />
+    </ItemGroup>
+
+    <Target Name="GenerateMessagePack" AfterTargets="Compile">
+        <MessagePackGenerator Input="$(ProjectPath)" Output="$(ProjectDir)MessagePack.Generated.cs" />
+    </Target>
+    <Target Name="GenerateMagicOnion" AfterTargets="Compile">
+        <MagicOnionGenerator Input="$(ProjectPath)" Output="$(ProjectDir)MagicOnion.Generated.cs" />
+    </Target>
+
+</Project>
